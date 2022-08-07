@@ -119,9 +119,11 @@ def _generate_json(generator: PythonProvider, _: Any) -> Dict[str, Union[str, in
     return generator.pydict(
         10,
         True,
-        str,
-        int,
-        bool,
+        [
+            str,
+            int,
+            bool,
+        ],
     )
 
 
