@@ -21,8 +21,12 @@ _STAT_SHIELD = "https://pepy.tech/badge/faker_sqlalchemy/month"
 _STAT_LABEL = "Downloads"
 
 
-def _render_badge(label, badge, url):
+def _render_badge_markdown(label, badge, url):
     return f"[![{label}]({badge})]({url})"
+
+
+def _render_badge(label, badge, url):
+    return f".. |{label}| image:: {badge}\n   :target: {url}"
 
 
 def main():
