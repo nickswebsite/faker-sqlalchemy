@@ -1,5 +1,5 @@
 """`SQLAlchemy Faker <https://faker-sqlalchemy.readthedocs.io/en/latest/>`_ is a provider for the
-`Faker <https://github.com/joke2k/faker>`_ library that helps populate `SQLAlchemh ORM <https://www.sqlalchemy.org/>`_
+`Faker <https://github.com/joke2k/faker>`_ library that helps populate `SQLAlchemy ORM <https://www.sqlalchemy.org/>`_
 models with dummy data. Creating a new instance of a model can be as simple as calling
 ``fake.sqlalchemy_model(SomeModel)``.
 
