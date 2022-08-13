@@ -21,7 +21,6 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Topic :: Software Development",
     "Topic :: Software Development :: Build Tools",
     "Topic :: Software Development :: Libraries",
@@ -55,7 +54,6 @@ test = [
 Documentation = "https://faker-sqlalchemy.readthedocs.io/en/latest/"
 Source = "https://github.com/nickswebsite/faker-sqlalchemy"
 Homepage = "https://github.com/nickswebsite/faker-sqlalchemy"
-
 
 [tool.black]
 line-length = 120
