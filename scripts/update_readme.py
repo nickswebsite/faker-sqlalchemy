@@ -43,6 +43,11 @@ class _Badges:
         "https://pepy.tech/badge/faker_sqlalchemy/month",
         "Downloads",
     )
+    CI = Badge(
+        "https://github.com/nickswebsite/faker-sqlalchemy/actions/workflows/package.yml",
+        "https://github.com/nickswebsite/faker-sqlalchemy/actions/workflows/package.yml/badge.svg",
+        "Build",
+    )
 
 
 def main():
@@ -57,6 +62,7 @@ def main():
 
     badges = [
         _Badges.PYPI,
+        _Badges.CI,
         _Badges.VERSIONS,
         _Badges.RTFM,
         _Badges.STATS,

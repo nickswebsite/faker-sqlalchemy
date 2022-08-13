@@ -1,7 +1,7 @@
 Fakers for SQLAlchemy
 =====================
 
-|PyPI| |Supported Python versions| |Documentation| |Downloads| 
+|PyPI| |Build| |Supported Python versions| |Documentation| |Downloads| 
 
 `SQLAlchemy Faker <https://faker-sqlalchemy.readthedocs.io/en/latest/>`_ is a provider for the
 `Faker <https://github.com/joke2k/faker>`_ library that helps populate `SQLAlchemy ORM <https://www.sqlalchemy.org/>`_
@@ -45,6 +45,8 @@ RNvnAvOpyEVAoNGnVZQU
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/faker_sqlalchemy
    :target: https://pypi.org/project/faker_sqlalchemy/
+.. |Build| image:: https://github.com/nickswebsite/faker-sqlalchemy/actions/workflows/package.yml/badge.svg
+   :target: https://github.com/nickswebsite/faker-sqlalchemy/actions/workflows/package.yml
 .. |Supported Python versions| image:: https://img.shields.io/pypi/pyversions/faker_sqlalchemy.svg
    :target: https://pypi.org/project/faker_sqlalchemy/
 .. |Documentation| image:: https://readthedocs.org/projects/faker-sqlalchemy/badge/?version=latest

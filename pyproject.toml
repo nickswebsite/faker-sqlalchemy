@@ -49,6 +49,11 @@ test = [
     "tox >=4.0.b2",
 ]
 
+github = [
+    "tox-gh-actions @ git+https://github.com/ymyzk/tox-gh-actions.git@tox4",
+    # Uncomment this when tox4 is officially released.
+    # "tox-gh-actions",
+]
 
 [project.urls]
 Documentation = "https://faker-sqlalchemy.readthedocs.io/en/latest/"
