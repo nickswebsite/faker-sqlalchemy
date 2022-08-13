@@ -45,35 +45,6 @@ class _Badges:
     )
 
 
-#
-# _PYPI_URL = "https://pypi.org/project/faker_sqlalchemy/"
-# _PYPI_SHIELD = "https://img.shields.io/pypi/v/faker_sqlalchemy"
-# _PYPI_LABEL = "PyPI"
-#
-# _VERSIONS_SHIELD = "https://img.shields.io/pypi/pyversions/faker_sqlalchemy.svg"
-# _VERSIONS_LABEL = "Supported Python versions"
-#
-# _RTFM_URL = "https://faker-sqlalchemy.readthedocs.io/en/latest/?badge=latest"
-# _RTFM_SHIELD = "https://readthedocs.org/projects/faker-sqlalchemy/badge/?version=latest"
-# _RTFM_LABEL = "Documentation"
-#
-# _STAT_URL = "https://pepy.tech/project/faker_sqlalchemy/"
-# _STAT_SHIELD = "https://pepy.tech/badge/faker_sqlalchemy/month"
-# _STAT_LABEL = "Downloads"
-
-#
-# def _render_badge_markdown(label, badge, url):
-#     return f"[![{label}]({badge})]({url})"
-#
-#
-# def _render_badge_rst_definition(label, badge, url):
-#     return f".. |{label}| image:: {badge}\n   :target: {url}"
-#
-#
-# def _render_badge_rst_declaration(label):
-#     return f"|{label}|"
-
-
 def main():
     base_dir = os.path.dirname(
         os.path.dirname(
@@ -84,12 +55,6 @@ def main():
 
     import faker_sqlalchemy
 
-    # badges = [
-    #     _render_badge_rst_definition(_PYPI_LABEL, _PYPI_SHIELD, _PYPI_URL),
-    #     _render_badge_rst_definition(_VERSIONS_LABEL, _VERSIONS_SHIELD, _PYPI_URL),
-    #     _render_badge_rst_definition(_RTFM_LABEL, _RTFM_SHIELD, _RTFM_URL),
-    #     # _render_badge_rst_definition(_STAT_LABEL, _STAT_SHIELD, _STAT_URL),
-    # ]
     badges = [
         _Badges.PYPI,
         _Badges.VERSIONS,
