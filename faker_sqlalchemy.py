@@ -36,6 +36,18 @@ Use ``instance`` as desired.
 
 >>> print(instance.value)
 RNvnAvOpyEVAoNGnVZQU
+
+Supported Versions
+------------------
+
+Currently SQLAlchemy versions 1.3 and 1.4 are supported. Support for SQLAlchemy 2.0 will be added when it is released.
+
+Faker versions ``>=8`` are currently supported, though it should be noted that the testing matrix isn't exhaustive. If
+bugs come up with a particular version of faker beyond version 8.0, submit a ticket to add support.
+
+Python versions ``>=3.7`` are currently supported. If python 3.6 support is desired, submit a ticket to add support. Support
+for Python 3.11 will be added when it is officially supported by SQLAlchemy. Currently, this is waiting on greenlet
+releasing support for python 3.11.
 """
 
 import datetime
@@ -46,7 +58,11 @@ from faker.providers import BaseProvider
 from faker.providers.date_time import Provider as DateTimeProvider
 from faker.providers.misc import Provider as MiscProvider
 from faker.providers.python import Provider as PythonProvider
-from sqlalchemy.orm import DeclarativeMeta, Mapper, RelationshipProperty
+from sqlalchemy.orm import Mapper, RelationshipProperty
+try:
+    from sqlalchemy.orm import DeclarativeMeta
+except ImportError:
+    from sqlalchemy.ext.declarative import DeclarativeMeta
 from sqlalchemy.sql.type_api import TypeEngine
 from sqlalchemy import (
     inspect,
@@ -72,7 +88,7 @@ from sqlalchemy import (
     UnicodeText,
 )
 
-__version__ = "0.10.220813"
+__version__ = "0.10.2208140"
 __all__ = (
     "SqlAlchemyProvider",
 )
