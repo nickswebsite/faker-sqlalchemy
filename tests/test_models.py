@@ -42,7 +42,6 @@ from sqlalchemy import (
     TIME,
     Time,
     TIMESTAMP,
-    TupleType,
     TypeDecorator,
     Unicode,
     UnicodeText,

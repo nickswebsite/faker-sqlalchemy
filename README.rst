@@ -42,6 +42,18 @@ Use ``instance`` as desired.
 >>> print(instance.value)
 RNvnAvOpyEVAoNGnVZQU
 
+Supported Versions
+------------------
+
+Currently SQLAlchemy versions 1.3 and 1.4 are supported. Support for SQLAlchemy 2.0 will be added when it is released.
+
+Faker versions ``>=8`` are currently supported, though it should be noted that the testing matrix isn't exhaustive. If
+bugs come up with a particular version of faker beyond version 8.0, submit a ticket to add support.
+
+Python versions ``>=3.7`` are currently supported. If python 3.6 support is desired, submit a ticket to add support. Support
+for Python 3.11 will be added when it is officially supported by SQLAlchemy. Currently, this is waiting on greenlet
+releasing support for python 3.11.
+
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/faker_sqlalchemy
    :target: https://pypi.org/project/faker_sqlalchemy/
